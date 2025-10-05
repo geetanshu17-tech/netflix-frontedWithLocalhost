@@ -80,8 +80,11 @@ git clone https://github.com/your-username/movie-app.git
 cd movie-app
 npm install
 npm start
----------------------------------------------------
-## **Usage**
+
+---
+
+
+## Usage
 
 Go to the Movies page to browse movies.
 
