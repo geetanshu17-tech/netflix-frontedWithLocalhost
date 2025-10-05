@@ -1,0 +1,128 @@
+/* navbar.css */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #141414; /* Netflix dark background */
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo img {
+  height: 45px;
+  cursor: pointer;
+}
+
+/* Navigation Links */
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #e5e5e5; /* Netflix light gray text */
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navigation ul li a:hover {
+  color: #e50914;
+  transform: scale(1.25);  
+}
+.cart-link {
+  position: relative;
+  display: inline-block;
+}
+
+.cart-icon {
+  font-size: 22px;       
+  color: #ffffff;       
+}
+
+.cart-count {
+  background-color: red; 
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 3px;
+  position: absolute;
+  top: -8px;   
+  right: -10px; 
+  min-width: 18px;
+  text-align: center;
+}
+.fav-icon {
+  font-size: 20px;
+  color: white;   
+  margin-right: 5px; 
+}
+
+.favorites-link {
+  display: inline-block;
+  position: relative;
+  align-items: center;
+}
+.fav-count {
+  background-color: red; 
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 3px;
+  position: absolute;
+  top: -8px;   
+  right: -10px; 
+  min-width: 18px;
+  text-align: center;
+}
+
+.profile img {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  background-color: #222;
+  padding: 3px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navigation ul {
+    gap: 20px;
+  }
+
+  .navigation ul li a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

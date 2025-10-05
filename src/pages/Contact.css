@@ -1,0 +1,146 @@
+/* Contact.css */
+
+/* Contact page */
+.contact-page {
+  background: #fff;
+  height: auto;
+  padding: 40px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-page h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.contact-page p {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.contact-page input {
+  padding: 12px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+/* Quick Links */
+.Quick-Links {
+  width: 100%;
+  max-width: 600px;
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.Quick-Links h2 {
+  text-align: left;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.Quick-Links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Quick-Links li {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.Quick-Links li:last-child {
+  border-bottom: none;
+}
+
+.Quick-Links svg {
+  margin-right: 10px;
+  flex-shrink: 0;
+  fill: #e50914; /* Netflix red style */
+}
+
+.Quick-Links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.Quick-Links a:hover {
+  color: #e50914;
+}
+
+/* Footer */
+.footer {
+  width: 99vw; /* full width of viewport */
+  background: linear-gradient(
+      10deg,
+      rgba(229, 9, 20, 0) 58%,
+      rgb(229, 9, 20) 128%
+    ),
+    #000;
+  min-height: 240px; /* taller footer */
+  display: flex;
+  justify-content: center; /* centers footer-content */
+  align-items: flex-start;
+  padding: 40px 0;
+  color: #fff;
+  box-sizing: border-box;
+  overflow-x: hidden; /* prevents footer overflow */
+  
+}
+
+/* Aligns with Quick Links */
+.footer-content {
+  width: 100%;
+  max-width: 600px; /* same as Quick Links */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 0 20px;
+}
+
+.footer select {
+  padding: 14px 46px;
+  border-radius: 6px;
+  border: 1px solid grey;
+  font-size: 20px; /* 2.5x bigger than p */
+  background-color: #000;
+  color: grey;
+  cursor: pointer;
+}
+
+.footer select option {
+  background-color: #000;
+  color: grey;
+  text-align: left;
+}
+
+.footer p {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.footer a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer a:hover {
+  color: #fff;
+}

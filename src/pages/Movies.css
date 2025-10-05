@@ -1,0 +1,110 @@
+.movies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background: #141414;
+}
+
+.malpage {
+  background: url('https://wallpapers.com/images/featured/attack-on-titan-the-final-season-c1wd2cqyzw2ydrag.jpg') no-repeat center center/cover;
+  color: white;
+  height: 500px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.malpage h1 {
+  font-size: 50px;
+  margin: 0 0 10px 0;
+}
+
+.malpage p {
+  font-size: 18px;
+  margin: 0 0 20px 0;
+}
+
+.malpage .play-icon {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.malpage button:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.genre1, .release-date1, .duration1, .summary1 {
+  margin: 5px 0;
+}
+
+.play {
+  background-color: #fff;       /* Netflix Play is white */
+  color: #000;                  /* black text */
+  border: none;
+  margin: 10px 10px 0 0;
+  padding: 8px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  width: auto;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.play:hover {
+  background-color: #e6e6e6;   /* slight gray on hover */
+  transform: scale(1.05);
+}
+
+.mylist {
+  background-color: rgba(109, 109, 110, 0.7); /* Netflix gray */
+  color: #fff;                  /* white text */
+  border: none;
+  margin: 10px 0;
+  padding: 8px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  width: auto;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.mylist:hover {
+  background-color: rgba(109, 109, 110, 0.9); /* darker hover */
+  transform: scale(1.05);
+}
+
+.malpage .play-icon {
+  font-size: 14px;
+}
+.btn-group {
+  display: flex;
+  gap: 10px; /* spacing between buttons */
+  align-items: center;
+  margin-top: 10px;
+}
+
+.plus-icon {
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.empty-message {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  margin-top: 50px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  width: 100%;
+}
