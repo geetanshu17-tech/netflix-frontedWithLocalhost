@@ -1,100 +1,93 @@
-🎬 Movie Streaming & Management React App
+# Netflix-Style Movie Streaming React App
 
-A responsive React.js app to browse movies, add them to Favorites or Cart, and manage selections. User choices are saved in localStorage, so the state persists across page refreshes.
+A responsive **React.js** application to browse movies, add them to **Favorites** or **Cart**, and manage selections. User choices are saved in **localStorage**, so the state persists even after refreshing the page.
 
-📚 Table of Contents
+---
 
-Features
+## Table of Contents
 
-Technologies Used
+- [Features](#features)  
+- [Demo](#demo)  
+- [Technologies Used](#technologies-used)  
+- [Folder Structure](#folder-structure)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Screenshots](#screenshots)  
+- [Contributing](#contributing)  
+- [License](#license)  
 
-Project Structure
+---
 
-Installation
+## Features
 
-Usage
+- Browse a list of movies with title, genre, summary, and poster.  
+- Add movies to **Favorites** or **Cart** with proper button states.  
+- Cart and Favorites are persisted in **localStorage**.  
+- Prevent duplicate entries in Cart or Favorites.  
+- Responsive design for desktop and mobile devices.  
+- Separate pages for Home, Movies, Cart, Favorites, Contact, and Profile.  
 
-Screenshots
+---
 
-Contributing
+## Technologies Used
 
-License
+- React.js (Functional Components & Hooks)  
+- React Router v6  
+- LocalStorage for persistence  
+- CSS (with custom styling, mobile-friendly layout)  
+- React Icons  
 
-✨ Features
+---
 
-Browse a curated list of movies with details: genre, release date, duration, and summary.
+## Folder Structure
 
-Add movies to Favorites or Cart.
+netflix-trial/
+├─ public/
+├─ src/
+│ ├─ assets/ # Images, logos, media assets
+│ ├─ pages/ # Pages like Home, Movies, Cart, Favorites, Profile
+│ ├─ components/ # Reusable components like Cards
+│ ├─ App.jsx
+│ ├─ index.jsx
+│ └─ index.css
+├─ package.json
+├─ README.md
+└─ .gitignore
 
-Persist selections using localStorage.
+yaml
+Copy code
 
-Conditional button rendering:
+---
 
-"Add to Cart" / "Add to Favorites" appear only on the Movies page.
+## Installation
 
-Buttons update to reflect state: "In Cart" or "Favorited".
+1. **Clone the repository:**
+```
+git clone https://github.com/geetanshu17-tech/netflix-frontedWithLocalhost.git
+```
 
-Responsive, well-aligned movie cards on all pages.
+2. **Navigate to project directory:**
+```
+cd netflix-trial
+Install dependencies:
 
-Smooth navigation using React Router.
-
-🛠️ Technologies Used
-
-Frontend: React.js, CSS
-
-Routing: React Router
-
-Icons: react-icons
-
-State Management: React useState + localStorage
-
-Styling: CSS Grid & Flexbox
-
-📁 Project Structure
-movie-app/
-│
-├── public/
-│   └── index.html
-│
-├── src/
-│   ├── pages/
-│   │   ├── Home.jsx
-│   │   ├── Movies.jsx
-│   │   ├── Favorites.jsx
-│   │   ├── Cart.jsx
-│   │   ├── Contact.jsx
-│   │   ├── Profile.jsx
-│   │   └── Navbar.jsx
-│   │
-│   ├── components/
-│   │   └── Cards.jsx
-│   │
-│   ├── assets/
-│   │   └── images/, videos/, etc.
-│   │
-│   ├── App.jsx
-│   └── index.js
-│
-├── package.json
-└── README.md
-
-⚙️ Installation
-
-Clone the repository:
-
-git clone https://github.com/your-username/movie-app.git
-cd movie-app
 npm install
+```
+
+3. **Start the development server:**
+```
 npm start
+```
 
-🚀 Usage
+## Usage
 
-Go to the Movies page to browse available movies.
+Visit /movies to browse the movie list.
 
-Click Add to Favorites to save a movie in your favorites list.
+Click Add to Favorites or Add to Cart to save movies.
 
-Click Add to Cart to save a movie in your cart.
+Access /favorites or /cart to see saved selections.
 
-Navigate to Favorites or Cart via the Navbar to view saved items.
+Counts of Cart and Favorites are persistent across page refreshes.
 
-All selections are saved using localStorage and persist after page refresh.
+Navigate between pages using the Navbar.
+
