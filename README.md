@@ -54,9 +54,6 @@ netflix-trial/
 ├─ README.md
 └─ .gitignore
 
-yaml
-Copy code
-
 ---
 
 ## Installation
